@@ -5,4 +5,10 @@ created: 2023-10-24T23:59:40.162259-04:00
 invoke: cloudevent
 build:
   buildpacks:
-  - docker.io/paketocommunity/rust
+    - docker.io/paketocommunity/rust
+  git:
+    url: https://github.com/enchantednatures/process-uploaded-image.git   # required, git repository with the function source code
+    revision: main                                    # optional, git revision to be used (branch, tag, commit)
+    # contextDir: myfunction                          # optional, needed only if the function is not located in the repository root folder
+  builder: ""
+  buildEnvs: []
