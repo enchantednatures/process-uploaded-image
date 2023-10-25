@@ -4,8 +4,8 @@ runtime: rust
 created: 2023-10-24T23:59:40.162259-04:00
 invoke: cloudevent
 build:
-  buildpacks:
-    - docker.io/paketocommunity/rust
+  # buildpacks:
+  #   - docker.io/paketocommunity/rust
   git:
     url: https://github.com/enchantednatures/process-uploaded-image.git   # required, git repository with the function source code
     revision: main                                    # optional, git revision to be used (branch, tag, commit)
